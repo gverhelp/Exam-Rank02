@@ -41,7 +41,7 @@ void	ft_union(char *str1, char *str2)
 	b = 0;
 	while (str2[b] != '\0')
 	{
-		if ((ft_check_double(str1[b], str1, a) == 0) && (ft_check_double(str2[b], str2, b) == 0))
+		if ((ft_check_double(str2[b], str1, a) == 0) && (ft_check_double(str2[b], str2, b) == 0))
 			write(1, &str2[b], 1);
 		b++;
 	}
